@@ -65,3 +65,41 @@ To reset back to before the merge:
 	
 Show remote branches:
 	git branch -r
+	
+Git stash:
+	git stash 
+		will save all uncommitted changes in your working directory, ready to be recovered later
+		!! Watch out - if you have added new files, you need to do git add . first.
+	git stash save ‘stash name’
+		Same as git stash (see below), but you can name the stash
+		!! Watch out - if you have added new files, you need to do git add . first.
+	git stash list
+		will show you all your current stashes
+		!! Type q to get back to command prompt
+	git stash show stash@{2}
+		will show details of a particular stash
+	git stash apply
+		will apply the most recent stash
+	git stash apply stash@{2}
+		will apply a specific stash
+	git stash apply --index
+		will reapply the stashed changes AND restage any files which were staged but not committed
+	git stash pop
+		will apply the most recent stash AND remove it from the stack (or a named stash - git stash pop stash@{2})
+	git stash drop stash@{2}
+		will remove the named stash from the stack
+	git stash branch
+		will create a new branch for you, check out the commit you were on when you stashed your work, reapply your work there, and then drop the stash if it applies successfully
+	Stuff about applying stashes:
+		If your working directory is not clean, it will attempt to merge changes, and let you know if any conflicts
+		You don’t have to apply the stash to the branch it was originally saved on
+	More here: http://git-scm.com/book/en/Git-Tools-Stashing 
+	
+Git aliases / command shortcuts:
+	This: git config --global alias.cm 'commit -m'
+		This will set up an alias so that instead of typing git commit –m, you can now just type git cm
+	This: git config –list
+		This will show you what aliases you already have set up
+	If you add something or create duplicates by accident, you can directly edit the config file:
+		This: git config --global –edit
+		This will put you in a VIM editor – see VIM instructions elsewhere in this doc
