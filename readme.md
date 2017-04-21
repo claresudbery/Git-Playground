@@ -43,4 +43,9 @@ What to do if you get stuck in a Vim Editor:
 	Type :wq
 	Hit Enter
 
-
+If you get stuck in the middle of a merge and want to abandon:
+	(You may get a message like this: “You have not concluded your merge (MERGE_HEAD exists)”
+	Use this: git merge abort
+		If it says you need to commit changes first, you can just do git stash instead
+		Or if you get “merge is not possible because you have unmerged files.”, you can do git add . and then git stash
+	You can tell if it has worked in gitbash, because it will stop saying “MERGING” after the branch name
