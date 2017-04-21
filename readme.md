@@ -1,5 +1,8 @@
 This repo is here to experiment with different git commands.
 
+This file contains helpful info / commands. 
+See EXERCISES.txt for some exercises.
+
 To create a new branch: 
 
 	git checkout master
@@ -126,3 +129,8 @@ git rm
 	Can also be used for removing a file from the repo but NOT from disk, like this
 	(useful for when you have added files to gitignore after they’ve been committed)
 	git rm --cached /path/to/file
+
+Fetch vs pull:
+	
+	Fetch will get all commits from the remote and store them locally.
+	Pull is the equivalent of running git fetch immediately followed by git merge.

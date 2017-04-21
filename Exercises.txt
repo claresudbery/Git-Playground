@@ -1,72 +1,91 @@
-https://github.com/claresudbery/Git-Playground
-
 EXERCISES
 
+(NB This is rather a lot! Give short time limits for each exercise and consider dropping the more trivial ones.
+The really interesting ones are those to do with branches, git stash, git merge, fetch vs pull, rebasing and the .git folder).
+
 1) GIT COMMAND SHORTCUTS (GIT ALIASES):
-a) Add a new git shortcut command for git revert
-	(See the readme for instructions)
+
+	a) Add a new git shortcut command for git revert
+		(See the readme for instructions)
 
 2) CREATING BRANCHES:
-a) As a whole class (on Clare's machine): Create a new branch, based on master
-b) Now try to push
-c) What happens? Why?
-d) Create your own new branch
-e) Make sure you use this branch for all the exercises in this file, unless told otherwise.
+
+	a) As a whole group (on Clare's machine): Create a new branch, based on master
+	b) Now try to push
+	c) What happens? Why?
+	d) Now, in pairs, create your own new branch
+	e) Make sure you use this branch for all the exercises in this file, unless told otherwise.
 
 3) GIT IGNORE:
-a) Add a new file to your solution, but add it to git ignore so it won't get committed to source control.
-b) Add a new file, 
-	then commit it to source control, 
-	then add it to git ignore,
-	then make a change to it and run git status on the command line. 
-	Is it still coming up as having changed? What can you do to fix this?
-c) Add a file type (eg all javascript files) to git ignore.
+
+	a) Add a new file to your solution, but add it to git ignore so it won't get committed to source control.
+	b) Add a new file, 
+		then commit it to source control, 
+		then add it to git ignore,
+		then make a change to it and run git status on the command line. 
+		Is it still coming up as having changed? What can you do to fix this?
+	c) Add a file type (eg all javascript files) to git ignore.
 
 4) FETCH VS PULL:
-a) Clare to make a remote change to master, AND add a new remote branch
-b) Everyone run git fetch on master
-c) Now do git branch -r
-d) Clare make another change, and add another remote branch
-e) Everyone run git pull
+
+	a) Clare to make a remote change to master, AND add a new remote branch
+	b) Everyone run git fetch on master
+	c) Now do git branch -r
+	d) Clare make another change, and add another remote branch
+	e) Everyone run git pull
 
 5) VIEWING DIFFERENCES:
-a) Make two changes each to two different files
-b) Run gitk
+
+	a) Make two changes each to two different files
+	b) Run gitk
 
 6) STAGING SELECTIVE THINGS:
-a) Make several changes to several files
-b) Visit this link: https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging
-c) Experiment with the following command: git add -i
+
+	a) Make several changes to several files
+	b) Visit this link: https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging
+	c) Experiment with the following command: git add -i
 
 7) GIT STASH:
-a) Make changes to several files and experiment with git stash (see readme for details)
+
+	a) Make changes to several files and experiment with git stash (see readme for details)
 
 8) RENAMING AND DELETING:
-a) Make a change in a file
-b) Rename that file
-c) Commit
-d) Run gitk to see the results
-e) Add a new file
-f) Commit
-g) Delete the file
-h) Commit
-i) Run gitk to see the results
+
+	a) Make a change in a file
+	b) Rename that file
+	c) Commit
+	d) Run gitk to see the results
+	e) Add a new file
+	f) Commit
+	g) Delete the file
+	h) Commit
+	i) Run gitk to see the results
 
 9) GIT MERGE:
-a) Merge the two branches "master" and "another-branch"
-b) Revert the merge (do not use reset)
-c) Get rid of the merge and the revert, and go back to how things were before the merge. 
+
+	a) Merge the two branches "master" and "another-branch"
+	b) Revert the merge (do not use reset)
+	c) Get rid of the merge and the revert, and go back to how things were before the merge. 
 
 10) REBASING:
-a) Switch to the rebasing branch: git checkout rebasing
-b) Make a change to the following line of code: the return statement in the CatchAHippo method in ThingDoer.cs
-c) Wait for me to make a change on the remote origin
-d) Run git pull on the command line
-e) Run gitk to see the results
-b) Make another change to the following line of code: the return statement in the CatchAHippo method in ThingDoer.cs
-c) Wait for me to make a change on the remote origin
-d) Run git pull --rebase on the command line
-e) Run gitk to see the results
 
-11) ANY TIPS?
-a) COMMIT FREQUENTLY
+	a) Switch to the rebasing branch: git checkout rebasing
+	b) Make a change to the following line of code: the return statement in the CatchAHippo method in ThingDoer.cs
+	c) Wait for me to make a change on the remote origin
+	d) Run git pull on the command line
+	e) Run gitk to see the results
+	b) Make another change to the following line of code: the return statement in the CatchAHippo method in ThingDoer.cs
+	c) Wait for me to make a change on the remote origin
+	d) Run git pull --rebase on the command line
+	e) Run gitk to see the results
+	
+13) GIT UNDER THE HOOD
+
+	a) The definition of a branch is just the commit Id of the head
+	b) If you checkout a commit which is not the head of a branch, you are in "detached head" mode
+	c) Experiment with checking out branches and individual commits, then seeing what changes in the files in the .git folder
+	d) Have a bit of a dig around in the .git folder: notice that branches are defined by commit Ids
+
+12) ANY TIPS?
+
+	a) COMMIT FREQUENTLY
