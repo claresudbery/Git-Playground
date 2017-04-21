@@ -52,7 +52,12 @@ If you get stuck in the middle of a merge and want to abandon:
 
 To revert the merge:
 	Find the merge commit, get its ID (hit gitk on command line and copy "SHA1 ID" for the relevant commit)
-	git revert [commit id]
+	git revert [commit id] -m 1
+
+To find the parents of a merge:
+	Find the merge commit, get its ID (hit gitk on command line and copy "SHA1 ID" for the relevant commit)
+	git show [commit id]
+	Parents are numbered 1 and 2. The first one shown is number 1.
 
 To reset back to before the merge:
 	Find the commit immediately before the merge, get its ID (hit gitk on command line and copy "SHA1 ID" for the relevant commit)

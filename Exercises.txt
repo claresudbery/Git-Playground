@@ -1,0 +1,13 @@
+EXERCISES
+
+)GIT IGNORE:
+a) Add a new file to your solution, but add it to git ignore so it won't get committed to source control.
+b) Add a new file, 
+	then commit it to source control, 
+	then add it to git ignore,
+	then make a change to it and run git status on the command line. 
+	Is it still coming up as having changed? What can you do to fix this?
+c) Add a file type (eg all javascript files) to git ignore.
+
+)GIT COMMAND SHORTCUTS (GIT ALIASES)
+a) Add a new git shortcut command for git revert
