@@ -21,10 +21,10 @@ namespace GitPlayground
         private static void OutputInstructions()
         {
             System.Console.WriteLine(string.Format("Let's do a {0} thing! Enter 'Exit' to exit.",
-                CatchARhino()));
+                CatchAHippo()));
         }
 
-        private static string CatchARhino()
+        private static string CatchAHippo()
         {
             return "rhinoceros";
         }
