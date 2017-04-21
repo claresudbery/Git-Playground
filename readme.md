@@ -1,19 +1,27 @@
 This repo is here to experiment with different git commands.
 
 To create a new branch: 
+
 	git checkout master
+	
 	git checkout -b a-new-branch
 	
 To merge: 
+
 	git checkout master
+	
 	git merge another-branch
 	
 To abort a merge:
+
 	git merge abort
 	
 To use kdiff3 as your merge tool:
+
 	1) Add KDiff3 to your environment path (windows key | System Environment variables | Path)
+	
 	2) Either:
+	
 		2a)	Find your gitconfig file (probably in your P drive) and add the lines below:	
 			[merge]
 				tool = kdiff3
