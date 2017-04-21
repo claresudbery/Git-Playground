@@ -49,3 +49,12 @@ If you get stuck in the middle of a merge and want to abandon:
 		If it says you need to commit changes first, you can just do git stash instead
 		Or if you get “merge is not possible because you have unmerged files.”, you can do git add . and then git stash
 	You can tell if it has worked in gitbash, because it will stop saying “MERGING” after the branch name
+
+To revert the merge:
+	Find the merge commit, get its ID (hit gitk on command line and copy "SHA1 ID" for the relevant commit)
+	git revert [commit id]
+
+To reset back to before the merge:
+	Find the commit immediately before the merge, get its ID (hit gitk on command line and copy "SHA1 ID" for the relevant commit)
+	git reset [commit id]
+	
