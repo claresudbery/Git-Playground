@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="InputOutput.cs" />
     <Compile Include="OtherThingDoer.cs" />
+    <Compile Include="PointlessClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThingDoer.cs" />
