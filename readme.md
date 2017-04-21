@@ -103,3 +103,9 @@ Git aliases / command shortcuts:
 	If you add something or create duplicates by accident, you can directly edit the config file:
 		This: git config --global –edit
 		This will put you in a VIM editor – see VIM instructions elsewhere in this doc
+
+git rm
+	Removes a file from the repo
+	Can also be used for removing a file from the repo but NOT from disk, like this
+	(useful for when you have added files to gitignore after they’ve been committed)
+	git rm --cached /path/to/file
