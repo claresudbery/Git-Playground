@@ -15,7 +15,7 @@ namespace GitPlayground
                 input = System.Console.ReadLine();
             }
 
-            System.Console.WriteLine("Goodbye!");
+            System.Console.WriteLine("Goodbye my friend!");
         }
 
         private static void OutputInstructions()
