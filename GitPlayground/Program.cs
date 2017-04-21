@@ -28,6 +28,7 @@ namespace GitPlayground
                 }
 
                 System.Console.WriteLine("Goodbye!");
+                System.Console.WriteLine("(There will now be a pause for a few seconds to give you time to read this message)");
 
                 Thread.Sleep(System.TimeSpan.FromSeconds(5));
             }
