@@ -9,13 +9,18 @@ namespace GitPlayground
             System.Console.WriteLine("Let's do another thing! Enter 'Exit' to exit.");
             string input = System.Console.ReadLine();
 
-            while (input.ToUpper() != "EXIT")
+            while (input.ToUpper() != "BOGIES")
             {
                 System.Console.WriteLine("Let's do another thing! Enter 'Exit' to exit.");
                 input = System.Console.ReadLine();
             }
 
-            System.Console.WriteLine("Goodbye!");
+            System.Console.WriteLine("Goodbye" + CatchAKitten());
+        }
+
+        private static string CatchAKitten()
+        {
+            return " Kitten.";
         }
     }
 }
