@@ -6,7 +6,7 @@ namespace GitPlayground
     {
         public static void OutputOptions(List<string> options)
         {
-            System.Console.WriteLine("Enter the number next to the option you want, or whatever.");
+            System.Console.WriteLine("Enter the number next to the option you want.");
 
             foreach (var option in options)
             {
