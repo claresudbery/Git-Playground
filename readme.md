@@ -44,6 +44,7 @@ To use kdiff3 as your merge tool:
 	3) type git mergetool in gitbash
 
 What to do if you get stuck in a Vim Editor:
+
 	Type i to get into insert mode
 		(if it’s worked, you’ll see “-- INSERT --” at bottom of screen
 	Type your commit message
@@ -52,6 +53,7 @@ What to do if you get stuck in a Vim Editor:
 	Hit Enter
 
 If you get stuck in the middle of a merge and want to abandon:
+
 	(You may get a message like this: “You have not concluded your merge (MERGE_HEAD exists)”
 	Use this: git merge abort
 		If it says you need to commit changes first, you can just do git stash instead
@@ -59,22 +61,27 @@ If you get stuck in the middle of a merge and want to abandon:
 	You can tell if it has worked in gitbash, because it will stop saying “MERGING” after the branch name
 
 To revert the merge:
+
 	Find the merge commit, get its ID (hit gitk on command line and copy "SHA1 ID" for the relevant commit)
 	git revert [commit id] -m 1
 
 To find the parents of a merge:
+
 	Find the merge commit, get its ID (hit gitk on command line and copy "SHA1 ID" for the relevant commit)
 	git show [commit id]
 	Parents are numbered 1 and 2. The first one shown is number 1.
 
 To reset back to before the merge:
+
 	Find the commit immediately before the merge, get its ID (hit gitk on command line and copy "SHA1 ID" for the relevant commit)
 	git reset [commit id]
 	
 Show remote branches:
+
 	git branch -r
 	
 Git stash:
+
 	git stash 
 		will save all uncommitted changes in your working directory, ready to be recovered later
 		!! Watch out - if you have added new files, you need to do git add . first.
@@ -104,6 +111,7 @@ Git stash:
 	More here: http://git-scm.com/book/en/Git-Tools-Stashing 
 	
 Git aliases / command shortcuts:
+
 	This: git config --global alias.cm 'commit -m'
 		This will set up an alias so that instead of typing git commit –m, you can now just type git cm
 	This: git config –list
@@ -113,6 +121,7 @@ Git aliases / command shortcuts:
 		This will put you in a VIM editor – see VIM instructions elsewhere in this doc
 
 git rm
+
 	Removes a file from the repo
 	Can also be used for removing a file from the repo but NOT from disk, like this
 	(useful for when you have added files to gitignore after they’ve been committed)
