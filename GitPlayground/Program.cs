@@ -45,11 +45,17 @@ namespace GitPlayground
             InputOutput.OutputOptions(new List<string>
                 {
                     "1. Do this thing here",
-                    "2. Do another thing!",
-                    "3. Exit",
+                    "2. Do something completely stupid!",
+                    "3. " + CatchAPony(),
+                    "4. Exit",
                 });
 
             return System.Console.ReadLine();
+        }
+
+        private static string CatchAPony()
+        {
+            return "Pony";
         }
     }
 }

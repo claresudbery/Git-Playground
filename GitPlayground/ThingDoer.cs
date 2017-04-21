@@ -20,7 +20,13 @@ namespace GitPlayground
 
         private static void OutputInstructions()
         {
-            System.Console.WriteLine("Let's do a thing! Enter 'Exit' to exit.");
+            System.Console.WriteLine(string.Format("Let's do a {0} thing! Enter 'Exit' to exit.",
+                CatchAHippo()));
+        }
+
+        private static string CatchAHippo()
+        {
+            return "hippopotamus";
         }
     }
 }

@@ -6,21 +6,16 @@ namespace GitPlayground
     {
         public static void Start()
         {
-            OutputInstructions();
+            System.Console.WriteLine("Let's do another thing! Enter 'Exit' to exit.");
             string input = System.Console.ReadLine();
 
             while (input.ToUpper() != "EXIT")
             {
-                OutputInstructions();
+                System.Console.WriteLine("Let's do another thing! Enter 'Exit' to exit.");
                 input = System.Console.ReadLine();
             }
 
             System.Console.WriteLine("Goodbye!");
-        }
-
-        private static void OutputInstructions()
-        {
-            System.Console.WriteLine("Let's do another thing! Enter 'Exit' to exit.");
         }
     }
 }
