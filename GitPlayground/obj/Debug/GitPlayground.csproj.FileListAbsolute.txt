@@ -1,0 +1,1 @@
+C:\ClareCode\Git-Playground\GitPlayground\bin\Debug\GitPlayground.exe.config
