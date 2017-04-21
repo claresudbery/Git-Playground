@@ -1,6 +1,6 @@
 EXERCISES
 
-)GIT IGNORE:
+) GIT IGNORE:
 a) Add a new file to your solution, but add it to git ignore so it won't get committed to source control.
 b) Add a new file, 
 	then commit it to source control, 
@@ -9,5 +9,41 @@ b) Add a new file,
 	Is it still coming up as having changed? What can you do to fix this?
 c) Add a file type (eg all javascript files) to git ignore.
 
-)GIT COMMAND SHORTCUTS (GIT ALIASES)
+) GIT COMMAND SHORTCUTS (GIT ALIASES):
 a) Add a new git shortcut command for git revert
+
+) REBASING:
+a) Switch to the rebasing branch: git checkout rebasing
+b) Make a change to the following line of code: the return statement in the CatchAHippo method in ThingDoer.cs
+c) Wait for me to make a change on the remote origin
+d) Run git pull on the command line
+e) Run gitk to see the results
+b) Make another change to the following line of code: the return statement in the CatchAHippo method in ThingDoer.cs
+c) Wait for me to make a change on the remote origin
+d) Run git pull --rebase on the command line
+e) Run gitk to see the results
+
+) RENAMING AND DELETING:
+a) Make a change in a file
+b) Rename that file
+c) Commit
+d) Run gitk to see the results
+e) Add a new file
+f) Commit
+g) Delete the file
+h) Commit
+i) Run gitk to see the results
+
+) CREATING BRANCHES:
+a) As a whole class (on Clare's machine): Create a new branch, based on master
+b) Now try to push
+c) What happens? Why?
+
+) FETCH VS PULL:
+a) Clare to make a remote change to master, AND add a new remote branch
+b) Everyone run git fetch on master
+c) Now do git branch -r
+d) Clare make another change, and add another remote branch
+e) Everyone run git pull
+
+

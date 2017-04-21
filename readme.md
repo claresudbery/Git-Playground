@@ -63,3 +63,5 @@ To reset back to before the merge:
 	Find the commit immediately before the merge, get its ID (hit gitk on command line and copy "SHA1 ID" for the relevant commit)
 	git reset [commit id]
 	
+Show remote branches:
+	git branch -r
