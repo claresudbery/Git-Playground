@@ -52,9 +52,22 @@ If you get stuck in the middle of a merge and want to abandon:
 
 To revert the merge:
 	Find the merge commit, get its ID (hit gitk on command line and copy "SHA1 ID" for the relevant commit)
-	git revert [commit id]
-
+	git revert [commit id] -m 1
+	
+To see parents of a merge:
+	Find the merge commit, get its ID (hit gitk on command line and copy "SHA1 ID" for the relevant commit)
+	git show [commit id]
+	Parents are numbered 1 and 2. The first one shown is number 1.	
+	
 To reset back to before the merge:
 	Find the commit immediately before the merge, get its ID (hit gitk on command line and copy "SHA1 ID" for the relevant commit)
 	git reset [commit id]
 	
+Setting up Git Command shortcuts (git aliases):
+	This: git config --global alias.cm 'commit -m'
+		This will set up an alias so that instead of typing git commit –m, you can now just type git cm
+	This: git config –list
+		This will show you what aliases you already have set up
+	If you add something or create duplicates by accident, you can directly edit the config file:
+		This: git config --global –edit
+		This will put you in a VIM editor – see VIM instructions elsewhere in this doc

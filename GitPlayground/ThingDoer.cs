@@ -26,7 +26,7 @@ namespace GitPlayground
 
         private static string CatchAHippo()
         {
-            return "hippopotamus";
+            return "rhinoceros";
         }
     }
 }
