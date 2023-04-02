@@ -25,7 +25,7 @@ namespace GitPlayground
 
         private static string CatchACrab()
         {
-            return " Crab.";
+            return " Hermit Crab.";
         }
 
         public static string FindAMollusc()
