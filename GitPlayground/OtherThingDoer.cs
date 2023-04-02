@@ -5,6 +5,22 @@ namespace GitPlayground
     internal class OtherThingDoer
     {
         const int NumMolluscsFound = 0;
+
+        private static string CatchAKitten()
+        {
+            return " Kitten.";
+        }
+
+        public static string FindAMollusc()
+        {
+            NumMolluscsFound++;
+            return " Limpet.";
+        }
+
+        private static string CatchACrab()
+        {
+            return " Hermit Crab.";
+        }
             
         public static void Start()
         {
@@ -20,22 +36,6 @@ namespace GitPlayground
             }
 
             System.Console.WriteLine("Goodbye" + CatchAKitten());
-        }
-
-        private static string CatchAKitten()
-        {
-            return " Kitten.";
-        }
-
-        private static string CatchACrab()
-        {
-            return " Hermit Crab.";
-        }
-
-        public static string FindAMollusc()
-        {
-            NumMolluscsFound++;
-            return " Limpet.";
         }
     }
 }
