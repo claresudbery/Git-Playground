@@ -4,8 +4,12 @@ namespace GitPlayground
 {
     internal class OtherThingDoer
     {
+        const int NumMolluscsFound = 0;
+            
         public static void Start()
         {
+            NumMolluscsFound = 0;
+            
             System.Console.WriteLine("Let's do another thing! Enter 'Exit' to exit.");
             string input = System.Console.ReadLine();
 
@@ -30,6 +34,7 @@ namespace GitPlayground
 
         public static string FindAMollusc()
         {
+            NumMolluscsFound++;
             return " Limpet.";
         }
     }
