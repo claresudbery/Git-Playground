@@ -22,5 +22,15 @@ namespace GitPlayground
         {
             return " Kitten.";
         }
+
+        private static string CatchACrab()
+        {
+            return " Crab.";
+        }
+
+        public static string FindAMollusc()
+        {
+            return " Limpet.";
+        }
     }
 }
