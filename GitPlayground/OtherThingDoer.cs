@@ -19,7 +19,7 @@ namespace GitPlayground
 
         private static string CatchACrab()
         {
-            return " Hermit Crab.";
+            return " Crab.";
         }
             
         public static void Start()
