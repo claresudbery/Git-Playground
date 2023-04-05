@@ -1,7 +1,8 @@
 This repo is here to experiment with different git commands.
 
 This file contains helpful info / commands. 
-See EXERCISES.txt for some exercises.
+See [EXERCISES.txt](/Exercises.txt) for some exercises.
+See [Merging-examples.txt](/Merging-examples.txt) for documentation of some merging experiments
 
 To create a new branch: 
 

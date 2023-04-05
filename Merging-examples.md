@@ -1,0 +1,23 @@
+# Reverts
+
+- I experimented (Mar/Apr '23) with how to use `git revert` to get round merge conflicts. 
+    - This was while I was thinking about the "shiny happy example" in my O'Reilly TBD article
+- Details...
+- On my machine:
+    - In commit c537fd2... I moved functions around
+    - In commit 3b1ba18... I changed a return value
+- Remotely (directly in github.com):
+    - In commit beecdf3f I changed a return value in a different function
+    - In commit 656cb14 I added a member var to the class, then updated it in the function whose return value was changed locally
+- Back on my machine:
+    - I did a pull and merge
+    - There was a merge conflict
+    - I abandoned the merge: `git rebase --abort`
+    - I reverted the two local commits from before, in reverse order (3b1ba18, c537fd2)
+    - I did another pull and merge
+    - This time I skipped all the merge conflicts (four this time - both the original commits and the reverts of those commits
+        - I tried cherry-picking the original commits, but of course that didn’t work because of the same problems - merge confiicts
+    - So I used `git reflog` to see the orignal commit IDs
+    - Then `git diff [commit id] [commit id]` to see the changes introduced by those commits
+    - Then manually made same changes again
+    - Then pushed the result
