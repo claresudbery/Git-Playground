@@ -17,7 +17,18 @@
     - I did another pull and merge
     - This time I skipped all the merge conflicts (four this time - both the original commits and the reverts of those commits
         - I tried cherry-picking the original commits, but of course that didn’t work because of the same problems - merge confiicts
+        - !! Because I skipped the merge conflicts this also means the original commits AND their reverts were all LOST from the timeline - the commits are no longer visible in the branch, either locally or remotely, not even if you add the commit ID to a relevant url
     - So I used `git reflog` to see the orignal commit IDs
     - Then `git diff [commit id] [commit id]` to see the changes introduced by those commits
     - Then manually made same changes again
     - Then pushed the result
+
+- Replay:
+- On my machine:
+    - In commit 1210454 we moved functions around
+    - In commit d7bd32d we changed a return value
+- Remotely:
+    - In commit 176eb2c they changed a return value in a different function
+    - In commit 37ca315 they removed the member var update line from the function whose return value was changed locally
+- Back on my machine:
+    - I did a pull and merge
