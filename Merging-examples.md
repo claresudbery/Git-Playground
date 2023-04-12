@@ -31,3 +31,10 @@
         - In commit 37ca315 they removed the member var update line from the function whose return value was changed locally
     - Back on my machine:
         - I did another `gup` (pull, merge, rebase)
+- Replay but this time without rebase:
+    - Remotely:
+        - In commit xxx they changed a return value and added a variable update in the same function
+    - On my machine:
+        - In commit xxx we moved the same function to elsewhere
+    - Back on my machine:
+        - I did `git pull`
