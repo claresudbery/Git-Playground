@@ -13,7 +13,8 @@ namespace GitPlayground
 
         public static string FindAMollusc()
         {
-            return " Limpet.";
+            NumMolluscsFound++;
+            return " Mollusc.";
         }
 
         private static string CatchACrab()
