@@ -11,15 +11,15 @@ namespace GitPlayground
             return " Kitten.";
         }
 
+        private static string CatchACrab()
+        {
+            return " Crab.";
+        }
+
         public static string FindAMollusc()
         {
             NumMolluscsFound++;
             return " Mollusc.";
-        }
-
-        private static string CatchACrab()
-        {
-            return " Crab.";
         }
             
         public static void Start()
