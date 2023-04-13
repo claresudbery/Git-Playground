@@ -19,7 +19,7 @@ namespace GitPlayground
         public static string FindAMollusc()
         {
             NumMolluscsFound++;
-            return " Mollusc.";
+            return " Limpet.";
         }
             
         public static void Start()
