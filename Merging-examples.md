@@ -17,7 +17,9 @@
     - I did another `gup` (pull, merge, rebase)
     - This time I skipped all the merge conflicts (four this time - both the original commits and the reverts of those commits
         - I tried `git cherry-pick` on the original commits, but of course that didn’t work because of the same problems - merge confiicts
-        - !! Because I skipped the merge conflicts this also means the original commits AND their reverts were all LOST from the timeline - the commits are no longer visible in the branch, either locally or remotely, not even if you add the commit ID to a relevant url
+        - !! Because I skipped the merge conflicts this also means the original commits AND their reverts were all LOST from the timeline 
+        - the commits are no longer visible in the branch, either locally or remotely, not even if you add the commit ID to a relevant url
+        - !! BUT this is because I was effectively doing `git pull --rebase` - the rebase means that all commits are summarised into one line of changes. I'm pretty sure if it wasn't a rebase, you'd see two parallel branches in the commit history, and onf them would include the reverted commits
     - So I used `git reflog` to see the orignal commit IDs
     - Then `git diff [commit id] [commit id]` to see the changes introduced by those commits
     - Then manually made same changes again
